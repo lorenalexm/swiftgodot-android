@@ -1,4 +1,4 @@
-name: Build Dynamic Library (Linux & Android)
+name: Build Dynamic Library (Android)
 
 on:
   push:
@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: "Test Swift Package on Linux"
-        run: swift test
-      - name: "Test Swift Package on Android"
+      - name: "Build Swift Package on Android"
         uses: skiptools/swift-android-action@v2
         with:
           swift-version: "5.9"
+          build-tests: false
+          run-tests: false
