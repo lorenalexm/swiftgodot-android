@@ -8,7 +8,7 @@ let package = Package(
 		.library(name: "AndroidDemo", type: .dynamic, targets: ["AndroidDemo"]),
 	],
 	dependencies: [
-		.package(url: "https://github.com/migueldeicaza/SwiftGodot", branch: "main")
+		.package(url: "https://github.com/marcprux/SwiftGodot", branch: "main")
 	],
 	targets: [
 		.target(
